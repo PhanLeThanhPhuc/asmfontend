@@ -1,0 +1,48 @@
+
+<!-- <div class="card mb-2" ng-repeat="ch in caccauhoi">
+    <div class="card-header" style="font-weight: bold;">
+        <i class="bi bi-book"></i>
+        {{ch.Text}}
+        <span class="badge rounded-pill bg-primary " style="float: right;">10:00</span>
+    </div>
+    <div class="card-body">
+        <p ng-repeat="pa in ch.Answers" class="card-text">
+            <input type="radio" name="pa" value="{{pa.Id}}" id=""> {{pa.Text}}
+        </p>
+    </div>
+    <div class="card-footer text-muted">Điểm: {{ch.Marks}}</div>
+</div> -->
+
+<div class="card col-sm-8 col-12 m-auto mt-5 mb-3" style="height: 300px;" >
+    <div style="box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;" class="card col" ng-repeat="ch in caccauhoi|limitTo: pageSize:start">
+        <div class="card-header" style="font-weight: bold;"><i class="bi bi-chat-text"></i>
+            {{tenMH}}
+            <span class="badge rounded-pill bg-primary " style="float: right;">10:00</span>
+        </div>
+        <div class="card-body" style="height: 200px;">
+            <h5 class="card-title">
+                {{ch.Text}}
+            </h5>
+            <div class="form-check"  ng-repeat="pa in ch.Answers"  >
+                <input type="radio" name="pa" value="{{pa.Id}}" > 
+                <label class="form-check-label"  for="exampleRadios1">
+                    {{pa.Text}}
+                    {{tenMH}}
+                </label>
+            </div>
+        </div>
+        <div style="padding-left: 16px; padding-bottom: 15px;">
+            <button style="width: 100px;" type="button" class="btn btn-danger mt-2">Chọn</button>
+        </div>
+    </div>
+</div>
+<div class=" text-center mb-5 mt-5">
+    <button ng-click="first()" type="button" class="btn btn-outline-dark bg-light" style="width: 70px; border-radius: 50px;"><i
+            class="fa-sharp fa-solid fa-hand-point-up"></i></button>
+    <button  ng-click="prev()" type="button" class="btn btn-outline-dark bg-light" style="width: 70px; border-radius: 50px;"><i
+            class="fa-solid fa-hand-point-left"></i></button>
+    <button  ng-click="next()" type="button" class="btn btn-outline-dark bg-light" style="width: 70px;border-radius: 50px;"><i
+            class="fa-solid fa-hand-point-right"></i></button>
+    <button  ng-click="last()" type="button" class="btn btn-outline-dark bg-light" style="width: 70px;border-radius: 50px;"><i
+            class="fa-sharp fa-solid fa-hand-point-down"></i></button>
+</div>

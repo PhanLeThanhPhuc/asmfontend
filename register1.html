@@ -1,0 +1,62 @@
+<div class="breadcrumb">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+        aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">TRANG CHỦ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">ĐĂNG KÍ</li>
+        </ol>
+    </nav>
+</div>
+<div class="card-body container-form col-sm-4 p-4">
+    <form class="row ">
+        <h4 class="text-center content-register">ĐĂNG KÍ</h4>
+        <div class="mb-3 col-sm-12">
+            <label for="exampleInputEmail1" class="form-label">
+                <i class="bi bi-person-fill"></i> Tên đăng nhập
+            </label>
+            <input ng-model="username" type="text" placeholder="Nhập tên đăng nhập..." class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp" />
+        </div>
+
+        <div class="mb-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">
+                <i class="bi bi-person-fill"></i> Mật khẩu
+            </label>
+            <input ng-model="password" type="text" placeholder="Nhập mật khẩu..." class="form-control" id="exampleInputPassword1" />
+        </div>
+
+        <div class="mb-3 col-sm-12">
+            <label for="exampleInputEmail1" class="form-label">
+                <i class="bi bi-person-fill"></i> Họ và tên
+            </label>
+            <input ng-model="fullname" type="text" placeholder="Nhập họ tên..." class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp" />
+        </div>
+
+        <div class="mb-3 col-sm-12">
+            <label for="exampleInputEmail1" class="form-label">
+                <i class="bi bi-cash"></i> Ngày sinh
+            </label>
+            <input ng-model="birthday" type="date" placeholder="Chọn ngày sinh..." class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp" />
+        </div>
+
+        <div class="mb-3 col-sm-12">
+            <label for="exampleInputEmail1" class="form-label">
+                <i class="bi bi-cash"></i> Giới tính
+            </label> <br>
+            <input ng-model="radiogioitinh" class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Nam"
+                checked>
+            <label  class="form-check-label" for="exampleRadios1">
+                Nam
+            </label>
+            <input ng-model="radiogioitinh" class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Nữ"
+                checked>
+            <label class="form-check-label" for="exampleRadios1">
+                Nữ
+            </label>
+        </div>
+    </form>
+    <button ng-click="dangki()" type="button" class="btn btn-outline-primary">Đăng kí</button>
+    <button type="button" class="btn btn-outline-danger">Hủy</button>
+</div>

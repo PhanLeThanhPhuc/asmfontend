@@ -1,0 +1,126 @@
+<div class="breadcrumb">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+        aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">TRANG CHỦ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">DANH MỤC MÔN HỌC</li>
+        </ol>
+    </nav>
+</div>
+<div class="container-subject list w-100">
+    <div class="container_subjects">
+        <div class="subjects text-center pb-4">
+            <div class="row row-cols-1 g-4">
+                <div class="col-sm-4" ng-repeat="mh in cacmonhoc|limitTo: pageSize:start">
+                    <div class="card" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
+                        <img src="image/{{mh.Logo}}" class="card-img-top img_subjects" alt="..." />
+                        <div class="card-body" style="height: 200px;">
+                            <h5 class="card-title" style="font-weight: bold; min-height: 50px;">{{mh.Name}}</h5>
+                            <p class="card-text">
+                                GỒm 50 câu hỏi trắc nghiệm có lời giải chi tiết...
+                            </p>
+                            <div>
+                                <button type="button" style="margin-bottom: 10px;" class="btn btn-primary"> <a
+                                        style="text-decoration: none;" n class="text-light"
+                                        href="#!learnthesubject/{{mh.Id}}/{{mh.Name}}">
+                                        Vào làm
+                                    </a></button>
+                            </div>
+                            <!-- <button type="button" style="margin-bottom: 10px;" class="btn btn-primary">Vào làm</button> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-3">
+                    <div class="card">
+                        <img src="image/ADBS.jpg" class="card-img-top img_subjects" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Điện toán đám mây</h5>
+                            <p class="card-text">
+                                GỒm 50 câu hỏi trắc nghiệm có lời giải chi tiết...
+                            </p>
+                            <button type="button" class="btn btn-primary">Vào làm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="image/ASNE.png" class="card-img-top img_subjects" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Lập trình PHP</h5>
+                            <p class="card-text">
+                                GỒm 50 câu hỏi trắc nghiệm có lời giải chi tiết...
+                            </p>
+                            <button type="button" class="btn btn-primary">Vào làm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="image/CLCO.jpg" class="card-img-top img_subjects" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Lập trình Android</h5>
+                            <p class="card-text">
+                                GỒm 50 câu hỏi trắc nghiệm có lời giải chi tiết...
+                            </p>
+                            <button type="button" class="btn btn-primary">Vào làm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="image/DBAV.png" class="card-img-top img_subjects" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Lập trình Android cơ bản</h5>
+                            <p class="card-text">
+                                GỒm 50 câu hỏi trắc nghiệm có lời giải chi tiết...
+                            </p>
+                            <button type="button" class="btn btn-primary">Vào làm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="image/DBBS.png" class="card-img-top img_subjects" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Thiết kế layout</h5>
+                            <p class="card-text">
+                                GỒm 50 câu hỏi trắc nghiệm có lời giải chi tiết...
+                            </p>
+                            <button type="button" class="btn btn-primary">Vào làm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="image/ADTE.jpg" class="card-img-top img_subjects" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">Thiết kế giao diện Android</h5>
+                            <p class="card-text">
+                                GỒm 50 câu hỏi trắc nghiệm có lời giải chi tiết...
+                            </p>
+                            <button type="button" class="btn btn-primary">Vào làm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <img src="image/ADTE.jpg" class="card-img-top img_subjects" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title" style="font-weight: bold;">QL dự án với Agile</h5>
+                            <p class="card-text">
+                                GỒm 50 câu hỏi trắc nghiệm có lời giải chi tiết...
+                            </p>
+                            <button type="button" class="btn btn-primary">Vào làm</button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w-100 text-center">
+    <button style="width:10%;" ng-click="first()" type="button" class="btn btn-danger"><i class="bi bi-skip-backward-circle-fill"></i> Trang đầu</button>
+    <button style="width: 10%;"  ng-click="prev()" type="button" class="btn btn-success"> <i class="bi bi-caret-left-fill"></i> Trang trước</button>
+    <button style="width: 10%;"  ng-click="next()" type="button" class="btn btn-success">Trang kế <i class="bi bi-caret-right-fill"></i></button>
+    <button style="width: 10%;"  ng-click="last()" type="button" class="btn btn-danger">Trang tới <i class="bi bi-skip-forward-circle-fill"></i></button>
+</div>

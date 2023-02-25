@@ -1,0 +1,31 @@
+<!-- 
+<button  ng-repeat="mh in cacmonhoc|limitTo: pageSize:start" type="button" style="margin-bottom: 10px;" class="btn btn-primary"> <a
+    style="text-decoration: none;"n class="text-light" href="#!tracnghiem/{{mh.Id}}/{{mh.Name}}">
+    Vào làm
+</a></button> -->
+<!-- <div class="card text-center">
+    <div class="card-header">
+      Featured
+    </div>
+    <div class="card-body">
+        <button type="button" style="margin-bottom: 10px;" class="btn btn-primary"> <a
+            style="text-decoration: none;"n class="text-light" href="#!tracnghiem/{{idMH}}/{{tenMH}}">
+            Vào làm
+        </a></button>
+    </div>
+  </div> -->
+
+
+<div class="card text-center mt-5 mb-5 m-auto col-sm-4" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;">
+    <div class="card-body">
+        <img src="image/ADAV.jpg" style="width: 150px; margin: 0 auto;" class="card-img-top" alt="...">
+        <h5 class="card-title" style="font-weight: bold;">{{tenMH}}</h5>
+        <p class="card-text">Mã môn học: {{idMH}}</p>
+        <p class="card-text">Số câu hỏi:</p>
+        <p class="card-text">Thời gian: </p>
+        <button type="button" style="margin-bottom: 10px;" class="btn btn-primary"> <a style="text-decoration: none; font-weight: bold;" n
+                class="text-light"  href="#!tracnghiem/{{idMH}}/{{tenMH}}">
+                Bắt đầu làm bài
+            </a></button>
+    </div>
+</div>

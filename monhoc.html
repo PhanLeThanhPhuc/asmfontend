@@ -1,0 +1,32 @@
+<div class="row">
+    <article class="col" style="min-height: 0px;width: 100%; margin-top: 0; margin-left: 10px;">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="text-uppercase mt-2">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a style="text-decoration: none" href="index.html">TRANG CHỦ</a></li>
+              <li class="breadcrumb-item" style="color: #6c757d;" >Môn Học</li>
+              <li class="breadcrumb-item active" aria-current="page">Trắc nghiệm</li>
+            </ol>
+          </nav>
+    </article>
+<div class="card " ng-repeat="h in monhoc| limitTo:1"  style="padding-left: 20px;">
+    <!-- <div class="card-header text-uppercase text-">{{h.Name}}</div> -->
+    <div class="card-body"ng-repeat="ch in caccauhoi | limitTo:pagesize:start">
+        <p>{{ch.Text}} <span class="badge rounded-pill bg-primary float-end">0:00</span></p><hr>
+        <p class="card-text" ng-repeat="pa in ch.Answers">
+            <input type="radio" name="pa" value="{{pa.Id}}">  {{pa.Text}}
+        </p>
+    </div>
+    <div class="card-footer text-muted text-uppercase">Điểm: {{ch.Marks}}</div>
+    
+</div>
+</div>
+<div class="row mt-5 mr-0">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-8" >
+    <button ng-click="first()"  type="button" class="btn btn-primary " style=" width: 150px;"><i class="fa-solid fa-backward-fast"></i>&nbsp;&nbsp;Trang đầu</button>&nbsp;&nbsp;
+    <button ng-click="prev()"  type="button" class="btn btn-info" style=" width: 150px;"><i class="fa-solid fa-backward"></i>&nbsp;Trang trước</button>&nbsp;&nbsp;
+    <button ng-click="next()"  type="button" class="btn btn-info" style=" width: 150px;">Trang kế &nbsp;<i class="fa-solid fa-forward"></i></button>&nbsp;&nbsp;
+    <button ng-click="last()"  type="button" class="btn btn-primary" style=" width: 150px;">Trang cuối &nbsp;<i class="fa-solid fa-forward-fast"></i></button>
+</div>
+<div class="col-sm-1"></div>
+</div>

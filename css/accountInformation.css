@@ -1,0 +1,49 @@
+.container {
+    max-width: 1200px;
+    background-color: aqua;
+    /* height: 300px; */
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container .container-account {
+    max-width: 1200px;
+    /* height: 400px; */
+    background-color: aquamarine;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container .add-account {
+    max-width: 50%;
+    background-color: white;
+    margin: 0 auto;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.container .add-account .img-account {
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.container .add-account .name-account {
+    padding: 10px;
+}
+
+.container .add-account .name-account h4 {
+    font-weight: bold;
+}
+
+.container .information-account {
+    max-width: 1200px;
+    height: 300px;
+    background-color: beige;
+}
+
+.container .information-account .information {
+    max-width: 1200px;
+    height: 300px;
+    background-color:
+}

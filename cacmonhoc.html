@@ -1,0 +1,7 @@
+<ul class="list-group">
+    <li class="list-group-item list-group-item-dark text-light text-uppercase" style="background-color: rgb(25, 21, 21);" aria-current="true">DANH MỤC MÔN HỌC</li>
+    <li class="list-group-item bg-dark text-light" ng-repeat="mh in monhoc|orderBy:'Name'" >
+        <a style="text-decoration: none" href="#!tracnghiem/{{mh.Id}}/{{mh.Name}}">{{mh.Name|uppercase}}
+        </a>
+    </li>
+  </ul>

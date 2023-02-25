@@ -1,0 +1,32 @@
+<div class="breadcrumb">
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+        aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">TRANG CHỦ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">ĐĂNG NHẬP</li>
+        </ol>
+    </nav>
+</div>
+<div class="card-body col-sm-4 p-4 mb-5"
+    style=" border: 1px solid red; margin: 0 auto; background-color: white;border-radius: 20px;">
+    <form class="row ">
+        <h4 class="text-center content-register">ĐĂNG NHẬP</h4>
+        <div class="mb-3 col-sm-12">
+            <label for="exampleInputEmail1" class="form-label">
+                <i class="bi bi-person-fill"></i> Tên đăng nhập
+            </label>
+            <input ng-model="u" type="text" placeholder="Nhập tên đăng nhập..." class="form-control" id="exampleInputEmail1"
+                aria-describedby="emailHelp" />
+        </div>
+
+        <div class="mb-3 col-sm-12">
+            <label for="exampleInputPassword1" class="form-label">
+                <i class="bi bi-person-fill"></i> Mật khẩu
+            </label>
+            <input ng-model="p" type="text" placeholder="Nhập mật khẩu..." class="form-control" id="exampleInputPassword1" />
+        </div>
+
+    </form>
+    <button type="button" ng-click="dn()" class="btn btn-outline-primary">Đăng nhập</button>
+    <button type="button" class="btn btn-outline-danger">Hủy</button>
+</div>
